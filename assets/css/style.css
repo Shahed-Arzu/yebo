@@ -264,6 +264,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 600px;
+    overflow: hidden;
 }
 
 #product-intro-area .product-item-middle .right-side {
@@ -348,9 +349,102 @@ body {
 
 
 
+#product-intro-area .product-item-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 600px;
+    overflow: hidden;
+}
+
+#product-intro-area .product-item-bottom .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/big-image-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+
+}
+
+#product-intro-area .product-item-bottom .middle-side .text-area {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 55px;
+    text-align: center;
+
+}
+
+#product-intro-area .product-item-bottom .middle-side .text-area::before {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    content:  '';
+    background-color: #d7d7d7;
+    height: 3px;
+    width: 70px;
+
+}
+
+
+#product-intro-area .product-item-bottom .middle-side .text-area::after {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    content:  '';
+    height: 0;
+    width: 0;
+    border-top:  20px solid white;
+    border-right:  20px solid transparent;
+    border-bottom:  20px solid transparent;
+    border-left: 20px solid transparent;
+    
+
+
+}
 
 
 
+#product-intro-area .product-item-bottom .middle-side .text-area img {
+    display: inline-block;
+    width: 45px;
+    height: auto;
+    margin-bottom: 25px;
+
+}
+#product-intro-area .product-item-bottom .middle-side .text-area h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #353738;
+    margin-bottom: 25px;
+}
+
+#product-intro-area .product-item-bottom .middle-side .text-area p {
+    font-size: 16px;
+    color: #848789;
+    line-height: 1.6em;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#product-intro-area .product-item-bottom .middle-side .small-image img {
+    width: 100%;
+}
+
+
+#product-intro-area .product-item-bottom .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/big-image-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+
+}
 
 
 
