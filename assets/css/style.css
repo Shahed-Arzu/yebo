@@ -512,6 +512,117 @@ body {
   cursor: none;
 }
 /* Testimonial area end */
+/* Gallery area start */
+
+#gallery-area .gallery-contents {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 'img-1 img-2 img-3 img-4 img-5 img-5'
+                      'img-6 img-6 img-3 img-4 img-7 img-8';
+
+}
+
+
+#gallery-area .gallery-contents .gallery-item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 268px;
+}
+
+
+#gallery-area .gallery-contents .gallery-item:hover .overlay {
+  opacity: 0.5;
+  visibility: visible;
+}
+
+#gallery-area .gallery-contents .gallery-item:hover .logo-area {
+  opacity: 1.0;
+  visibility: visible;
+}
+
+
+#gallery-area .gallery-contents .gallery-item:nth-child(1) {
+  grid-area: img-1;
+  background-image: url('../img/box-1.jpg');
+}
+
+#gallery-area .gallery-contents .gallery-item:nth-child(2) {
+  grid-area: img-2;
+  background-image: url('../img/box-2.jpg');
+}
+
+#gallery-area .gallery-contents .gallery-item:nth-child(3) {
+  grid-area: img-3;
+  background-image: url('../img/box-3.jpg');
+}
+
+#gallery-area .gallery-contents .gallery-item:nth-child(4) {
+  grid-area: img-4;
+  background-image: url('../img/box-4.jpg');
+}
+
+#gallery-area .gallery-contents .gallery-item:nth-child(5) {
+  grid-area: img-5;
+  background-image: url('../img/box-5.jpg');
+}
+#gallery-area .gallery-contents .gallery-item:nth-child(6) {
+  grid-area: img-6;
+  background-image: url('../img/box-6.jpg');
+}
+
+#gallery-area .gallery-contents .gallery-item:nth-child(7) {
+  grid-area: img-7;
+  background-image: url('../img/box-7.jpg');
+}
+
+#gallery-area .gallery-contents .gallery-item:nth-child(8) {
+  grid-area: img-8;
+  background-image: url('../img/box-8.jpg');
+}
+
+#gallery-area .gallery-contents .gallery-item .overlay {
+ 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #64c295;
+  z-index: 1;
+
+}
+
+#gallery-area .gallery-contents .gallery-item .logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#gallery-area .gallery-contents .gallery-item .logo-area img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+#gallery-area .gallery-contents .gallery-item .logo-area strong {
+  color: white;
+  text-transform: uppercase;
+}
+
+
+/* Gallery area end */
 
 
 
