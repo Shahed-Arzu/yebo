@@ -742,6 +742,46 @@ body {
 
 /* Site main area end */
 /* Footer  area start */
-/* Site main area end */
+#footer-area { 
+ background-color: #f7f7f7;
+  padding: 120px 0;
+
+
+}
+
+#footer-area .container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#footer-area .container .footer-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-area .footer-contents .social-link svg {
+  margin-bottom: 35px;
+  color: #56c7ee;
+  font-size: 35px;
+}
+
+@media (max-width: 767px) {
+  #footer-area .container .footer-contents {
+    flex-direction: column;
+    
+  }
+
+  #footer-area .container .footer-contents .address-area {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+
+
+/*Footer  area end */
 
 
