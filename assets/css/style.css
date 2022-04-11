@@ -639,8 +639,109 @@ body {
 
 }
 
+
+@media (max-width: 991px) {
+  #gallery-area .gallery-contents {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 'img-1 img-2 img-3 img-4'
+                         'img-6 img-6 img-3 img-4'
+                         'img-5 img-8 img-8 img-7';
+  }
+}
+
+@media (max-width: 767px) {
+  #gallery-area .gallery-contents {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 'img-1 img-2'
+                         'img-3 img-4'
+                         'img-5 img-6'
+                         'img-7 img-8';
+  }
+}
+
+@media (max-width: 575px) {
+  #gallery-area .gallery-contents {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 'img-1'
+                         'img-2'
+                         'img-3'
+                         'img-4'
+                         'img-5'
+                         'img-6'
+                         'img-7'
+                         'img-8';
+  }
+
+  #gallery-area .shop-btn {
+    padding: 70px 0;
+  }
+
+  #gallery-area .shop-btn a {
+    font-size: 18px;
+    padding: 8px 20px;
+  
+  
+  }
+
+
+}
+
+
+
 /* Gallery area end */
+
+/* Subscribe area start */
+.sub-area {
+  background-color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+
+.sub-area .sub-header {
+  margin-bottom: 15px;
+}
+
+.sub-area .sub-header img {
+  display: inline-block;
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.sub-area .sub-header span {
+  display: block;
+  font-style: italic;
+}
+
+.sub-area .sub-form input[type="email"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 22%;
+}
+
+.sub-area .sub-form input[type="email"]::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+.sub-area .sub-form input[type="email"]:focus {
+  outline: none;
+}
+
+.sub-area .sub-form input[type="button"]{
+  background-color: #64c295;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Subscribe area end */
 
 
 
 /* Site main area end */
+/* Footer  area start */
+/* Site main area end */
+
+
